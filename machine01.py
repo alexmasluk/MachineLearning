@@ -5,6 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sklearn.linear_model as lin
 from sklearn.metrics import mean_squared_error as mse
+from sklearn.preprocessing import PolynomialFeatures as poly
+from sklearn.pipeline import make_pipeline
 
 def load_data():
     '''Experiment 1
@@ -42,11 +44,31 @@ def order1_linear_regression(olympics, dataset):
     y = dat[:,1]
     return lr.fit(x,y)
 
-
-def test_regression_model(olympics, test_type=1):
-    '''Experiments 3 and 5
-    Evaluate linear regression model(s) and display results
+def linear_regression_order_n(olympics, dataset, degree=1):
+    '''Perform n-order linear regression
+    Params: the olympics datasets, name of dataset on which to do LR, polynomial degree
+    Returns pipeline object
     '''
+    lr = lin.LinearRegression()
+    dat = olympics[dataset]
+    x = dat[:,0].reshape(-1,1)
+    y = dat[:,1]
+    model = make_pipeline(poly(degree), lr)
+    return model.fit(x,y)
+
+
+
+
+def test_regression_model(olympics, test_type=1, degree=3, compare=None):
+    '''Experiments 3, 5, 6, 7
+    Evaluate linear regression model(s) and display results
+    Params: Olympics datasets, test to perform, polynomial degree, previous value for comparison
+    Return value for future comparison
+    '''
+
+    # Occasionally we want to remember a value from our tests
+    # This gets returned
+    value = None
     if test_type == 1:
         model = order1_linear_regression(olympics, 'male100')
         # Experiment 3: display coefficients and predictions
@@ -66,6 +88,9 @@ def test_regression_model(olympics, test_type=1):
 
 
     if test_type == 2:
+        # Experiment 5: fit a line to female400
+        # Compare error with error from male100
+
         # X vectors
         m_x_vector = olympics['male100'][:,0].reshape(-1,1)
         f_x_vector = olympics['female400'][:,0].reshape(-1,1)
@@ -87,11 +112,39 @@ def test_regression_model(olympics, test_type=1):
         f_error = mse(f_actual, f_pred)
 
         # Display results
-        print("male100 mse  : ", m_error)
-        print("female400 mse: ", f_error)
-        print("female_mse - male_mse = ", (f_error - m_error))
+        print("male100 mse  : {}".format(m_error))
+        print("female400 mse: {}".format(f_error))
+        print("female_mse - male_mse = {}".format(abs(f_error - m_error)))
+        value = f_error
+
+    if test_type == 3:
+        # Experiment 6
+        # Fit an N order polynomial to female400. Does the error improve?
+
+        # Get the model
+        poly_model = linear_regression_order_n(olympics, 'female400', degree)
+
+        # X vector and actual values
+        x_vector = olympics['female400'][:,0].reshape(-1,1)
+        actual = olympics['female400'][:,1]
+
+        # Prediction set and mean squared error
+        p_pred = poly_model.predict(x_vector)
+        poly_error = mse(actual, p_pred)
+
+        # Display results
+        print("{}-degree error: {}".format(degree, poly_error))
+        print("Previous error:  {}".format(compare))
+        print("Current error < previous error? {}".format(poly_error < compare))
+        print("Diff = {}".format(abs(poly_error - compare)))
+        value = poly_error
+
+
 
     raw_input("Please hit enter to continue...")
+    return value
+
+
 
 def main():
     print("Experiment 1: Load the data")
@@ -114,10 +167,19 @@ def main():
 
     print("Experiment 5: Get linear regression model for female400")
     print("              Compare error with model for male100")
-    test_regression_model(olympics, 2)
+    error = test_regression_model(olympics, 2)
+    print('')
+
+    print("Experiment 6: Fit a 3rd degree polynomial to female400")
+    print("              Does the error improve?")
+    error = test_regression_model(olympics, 3, degree=3, compare=error)
     print('')
 
 
+    print("Experiment 6: Fit a 5th degree polynomial to female400")
+    print("              Does the error improve?")
+    test_regression_model(olympics, 3, degree=5, compare=error)
+    print('')
 
 if __name__ == '__main__':
     main()
