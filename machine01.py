@@ -1,8 +1,10 @@
 #!/usr/bin/python
 
 '''
-All code by Alex Masluk
-
+Code by Alex Masluk
+Used techniques learned from scikit-learn.org tutorials @ http://scikit-learn.org/stable/tutorial/index.html
+Obtained .coef_ and .intercept_ from pipeline obj by following example @ 
+    https://stackoverflow.com/questions/28822756/getting-model-attributes-from-scikit-learn-pipeline
 '''
 
 import scipy.io as sio
