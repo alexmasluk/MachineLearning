@@ -12,7 +12,7 @@ import numpy as np
 def load_data():
     '''Load and pre-process the data
     '''
-    with open('dresses1.csv') as f:
+    with open('human.csv') as f:
         data = f.readlines()
 
 
@@ -174,6 +174,9 @@ def main():
     data, response = split_data(data, response)
     print("Experiment 1 complete\n")
 
+    # standardize for svm
+    data = standardize(data)
+
     # experiment 2
     print("Experiment 2: Fit GaussianNB classifier to data")
     clf = gaussian_nb(data[0], response[0])
@@ -196,8 +199,6 @@ def main():
 
     # experiment 3
     print("Experiment 6: Fit SVM classifier to data, evaluate")
-    # standardize for svm
-    data = standardize(data)
     svms = svm(data[0], response[0])
     test_classifiers(svms, data[1], response[1])
     print("Experiment 6 complete\n")

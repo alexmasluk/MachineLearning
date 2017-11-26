@@ -1,0 +1,250 @@
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform'), 0.032621359223301005)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=6, p=2,
+           weights='uniform'), 0.039611650485436911)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=7, p=2,
+           weights='uniform'), 0.039223300970873787)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=8, p=2,
+           weights='uniform'), 0.045825242718446568)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=9, p=2,
+           weights='uniform'), 0.044271844660194182)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=10, p=2,
+           weights='uniform'), 0.049708737864077701)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=11, p=2,
+           weights='uniform'), 0.044660194174757306)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=12, p=2,
+           weights='uniform'), 0.049320388349514577)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=13, p=2,
+           weights='uniform'), 0.046213592233009693)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=14, p=2,
+           weights='uniform'), 0.046601941747572817)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=15, p=2,
+           weights='uniform'), 0.046990291262135941)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=16, p=2,
+           weights='uniform'), 0.051262135922330088)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=17, p=2,
+           weights='uniform'), 0.051262135922330088)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=18, p=2,
+           weights='uniform'), 0.052038834951456336)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=19, p=2,
+           weights='uniform'), 0.051262135922330088)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=20, p=2,
+           weights='uniform'), 0.052815533980582474)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=21, p=2,
+           weights='uniform'), 0.053592233009708723)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=22, p=2,
+           weights='uniform'), 0.053592233009708723)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=23, p=2,
+           weights='uniform'), 0.055533980582524234)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=24, p=2,
+           weights='uniform'), 0.055922330097087358)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=25, p=2,
+           weights='uniform'), 0.053980582524271847)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=26, p=2,
+           weights='uniform'), 0.055922330097087358)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=27, p=2,
+           weights='uniform'), 0.056310679611650483)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=28, p=2,
+           weights='uniform'), 0.058252427184465994)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=29, p=2,
+           weights='uniform'), 0.059029126213592242)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=30, p=2,
+           weights='uniform'), 0.059029126213592242)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=31, p=2,
+           weights='uniform'), 0.059029126213592242)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=32, p=2,
+           weights='uniform'), 0.061747572815534002)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=33, p=2,
+           weights='uniform'), 0.060582524271844629)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=34, p=2,
+           weights='uniform'), 0.061359223300970878)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=35, p=2,
+           weights='uniform'), 0.06252427184466014)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=36, p=2,
+           weights='uniform'), 0.062912621359223264)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=37, p=2,
+           weights='uniform'), 0.061747572815534002)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=38, p=2,
+           weights='uniform'), 0.063689320388349513)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=39, p=2,
+           weights='uniform'), 0.061747572815534002)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=40, p=2,
+           weights='uniform'), 0.06252427184466014)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=41, p=2,
+           weights='uniform'), 0.062912621359223264)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=42, p=2,
+           weights='uniform'), 0.06252427184466014)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=43, p=2,
+           weights='uniform'), 0.064077669902912637)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=44, p=2,
+           weights='uniform'), 0.06252427184466014)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=45, p=2,
+           weights='uniform'), 0.064077669902912637)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=46, p=2,
+           weights='uniform'), 0.062912621359223264)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=47, p=2,
+           weights='uniform'), 0.064466019417475762)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=48, p=2,
+           weights='uniform'), 0.063300970873786389)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=49, p=2,
+           weights='uniform'), 0.065631067961165024)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=50, p=2,
+           weights='uniform'), 0.064854368932038886)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=51, p=2,
+           weights='uniform'), 0.066019417475728148)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=52, p=2,
+           weights='uniform'), 0.066407766990291273)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=53, p=2,
+           weights='uniform'), 0.069514563106796157)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=54, p=2,
+           weights='uniform'), 0.066019417475728148)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=55, p=2,
+           weights='uniform'), 0.068349514563106784)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=56, p=2,
+           weights='uniform'), 0.066407766990291273)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=57, p=2,
+           weights='uniform'), 0.067572815533980535)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=58, p=2,
+           weights='uniform'), 0.067961165048543659)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=59, p=2,
+           weights='uniform'), 0.067961165048543659)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=60, p=2,
+           weights='uniform'), 0.067572815533980535)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=61, p=2,
+           weights='uniform'), 0.067961165048543659)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=62, p=2,
+           weights='uniform'), 0.069514563106796157)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=63, p=2,
+           weights='uniform'), 0.067961165048543659)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=64, p=2,
+           weights='uniform'), 0.069514563106796157)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=65, p=2,
+           weights='uniform'), 0.070679611650485419)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=66, p=2,
+           weights='uniform'), 0.071456310679611668)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=67, p=2,
+           weights='uniform'), 0.071844660194174792)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=68, p=2,
+           weights='uniform'), 0.071067961165048543)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=69, p=2,
+           weights='uniform'), 0.071844660194174792)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=70, p=2,
+           weights='uniform'), 0.072233009708737916)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=71, p=2,
+           weights='uniform'), 0.074951456310679565)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=72, p=2,
+           weights='uniform'), 0.075339805825242689)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=73, p=2,
+           weights='uniform'), 0.074563106796116552)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=74, p=2,
+           weights='uniform'), 0.074563106796116552)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=75, p=2,
+           weights='uniform'), 0.076116504854368938)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=76, p=2,
+           weights='uniform'), 0.075339805825242689)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=77, p=2,
+           weights='uniform'), 0.075728155339805814)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=78, p=2,
+           weights='uniform'), 0.0772815533980582)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=79, p=2,
+           weights='uniform'), 0.075339805825242689)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=80, p=2,
+           weights='uniform'), 0.0772815533980582)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=81, p=2,
+           weights='uniform'), 0.076893203883495187)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=82, p=2,
+           weights='uniform'), 0.076893203883495187)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=83, p=2,
+           weights='uniform'), 0.078446601941747574)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=84, p=2,
+           weights='uniform'), 0.0772815533980582)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=85, p=2,
+           weights='uniform'), 0.078058252427184449)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=86, p=2,
+           weights='uniform'), 0.077669902912621325)
+(KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=87, p=2,
+           weights='uniform'), 0.078834951456310698)
+
