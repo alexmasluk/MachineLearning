@@ -203,13 +203,13 @@ def main():
     # experiment 3
     # OUTPUT: 
     # CONFUSION MATRIX
-    # [294  76  46   0   0   0]
-    # [  9 341  19   0   0   0]
-    # [ 34  60 273   0   0   0]
-    # [  0   7   0 410  27   5]
-    # [  0   5   0 372 107   0]
-    # [  0   1   0 210   0 279]
-    # performance: 0.0
+    #[[326  69  36   0   0   0]
+    # [ 13 352  23   0   0   0]
+    # [ 16  56 224   0   0   0]
+    # [  0   4   0 425  29   3]
+    # [  0   8   0 325 141   0]
+    # [  0  15   0  19   0 491]]
+    #performance: 0.9202588996763755
     print("Experiment 3: Use the classifier to predict labels, and eval performance")
     scores.append(test_nb(clf, data[1], response[1]))
     print("Experiment 3 complete\n")
