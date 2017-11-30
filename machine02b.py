@@ -65,15 +65,13 @@ def test_nb(clf, data, response):
     c = confusion_matrix(response, predict)
     print("CONFUSION MATRIX")
     print(c)
-    total_correct = 0.0
-    total_incorrect = 0.0
-    for x in range(len(c)):
-        for y in range(len(c)):
-            if x == y:
-                total_correct += c[x][y]
-            else:
-                total_incorrect += c[x][y]
-    performance = total_incorrect / total_correct
+    FP = c.sum(axis=0) - np.diag(c)  
+    FN = c.sum(axis=1) - np.diag(c)
+    TP = np.diag(c)
+    TN = c.sum() - (FP + FN + TP)
+    
+    performance = np.mean((TP+TN)/(TP+FP+FN+TN))
+
     print("performance: {}".format(performance))
     return (clf, performance)
 
