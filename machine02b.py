@@ -201,6 +201,15 @@ def main():
     input("Press enter to continue . . .")
 
     # experiment 3
+    # OUTPUT: 
+    # CONFUSION MATRIX
+    # [330  65  44   0   0   0]
+    # [  6 360  21   0   0   0]
+    # [ 19  63 256   0   0   0]
+    # [  0   7   0 400  39   8]
+    # [  0   7   0 309 149   0]
+    # [  0   5   0 134   0 353]
+    #performance: 0.393398268398
     print("Experiment 3: Use the classifier to predict labels, and eval performance")
     scores.append(test_nb(clf, data[1], response[1]))
     print("Experiment 3 complete\n")
@@ -208,6 +217,10 @@ def main():
 
 
     # experiment 4
+    # OUTPUT: 
+    # K=3: 0.028349514563106748
+    # K=4: 0.038058252427184414
+    # K=5: 0.034174757281553392
     print("Experiment 4: Fit KNN classifier to data, evaluate")
     k_classifiers = knn(data[0], response[0])
     print("Testing KNN classifiers..")
@@ -216,6 +229,7 @@ def main():
     input("Press enter to continue . . .")
 
     # experiment 5
+    # OUTPUT: 0.028349514563106748
     print("Experiment 5: Which is better, our best KNN classifier or our Naive Bayes?")
     best = pick_best_classifier(scores)
     print(best[0], best[1])
@@ -223,6 +237,10 @@ def main():
     input("Press enter to continue . . .")
 
     # experiment 6
+    # OUTPUT: 
+    # Linear: 0.01281553398058255
+    # Degree 3: 0.073009708737864054
+    # Degree 5: 0.15339805825242714
     print("Experiment 6: Fit SVM classifier to data, evaluate")
     svms = svm(data[0], response[0])
     scores.extend(test_classifiers(svms, data[1], response[1]))
@@ -230,6 +248,7 @@ def main():
     input("Press enter to continue . . .")
 
     # experiment7
+    # OUTPUT: 0.01281553398058255
     print("Experiment 7: Which is better, our best KNN classifier or our Naive Bayes?")
     best = pick_best_classifier(scores)
     print(best[0], best[1])
@@ -237,6 +256,7 @@ def main():
     input("Press enter to continue . . .")
 
     # experiment 8
+    # OUTPUT: 0.399792853444 loss for k means
     print("Experiment 8: Remove labels, use KMeans to cluster data")
     km = kmeans(data[0])
     score = test_km(list(km.labels_), response[0])
