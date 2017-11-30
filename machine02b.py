@@ -190,6 +190,7 @@ def main():
     print("Experiment 1: Split into test and training")
     data, response = split_data(data, response)
     print("Experiment 1 complete\n")
+    input("Press enter to continue . . .")
 
     # standardize for svm
     #  ** our dataset is already standardized **
@@ -199,11 +200,13 @@ def main():
     print("Experiment 2: Fit GaussianNB classifier to data")
     clf = gaussian_nb(data[0], response[0])
     print("Experiment 2 complete\n")
+    input("Press enter to continue . . .")
 
     # experiment 3
     print("Experiment 3: Use the classifier to predict labels, and eval performance")
     scores.append(test_nb(clf, data[1], response[1]))
     print("Experiment 3 complete\n")
+    input("Press enter to continue . . .")
 
 
     # experiment 4
@@ -212,24 +215,28 @@ def main():
     print("Testing KNN classifiers..")
     scores.extend(test_classifiers(k_classifiers, data[1], response[1]))
     print("Experiment 4 complete\n")
+    input("Press enter to continue . . .")
 
     # experiment 5
     print("Experiment 5: Which is better, our best KNN classifier or our Naive Bayes?")
     best = pick_best_classifier(scores)
     print(best[0], best[1])
     print("Experiment 5 complete\n")
+    input("Press enter to continue . . .")
 
     # experiment 6
     print("Experiment 6: Fit SVM classifier to data, evaluate")
     svms = svm(data[0], response[0])
     scores.extend(test_classifiers(svms, data[1], response[1]))
     print("Experiment 6 complete\n")
+    input("Press enter to continue . . .")
 
     # experiment7
     print("Experiment 7: Which is better, our best KNN classifier or our Naive Bayes?")
     best = pick_best_classifier(scores)
     print(best[0], best[1])
     print("Experiment 7 complete\n")
+    input("Press enter to continue . . .")
 
     # experiment 8
     print("Experiment 8: Remove labels, use KMeans to cluster data")
@@ -237,6 +244,7 @@ def main():
     score = test_km(list(km.labels_), response[0])
     print("{} loss for k means".format(score))
     print("Experiment 8 complete")
+    input("Press enter to continue . . .")
 
 
 if __name__ == '__main__':
