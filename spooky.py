@@ -49,8 +49,33 @@ def ridge(X_train, y_train, X_val, y_val):
     clf = RidgeClassifier(solver="sag")
     clf.fit(X_train, y_train)
     pred = clf.predict(X_val)
+    p_pred = clf.decision_function(X_val)
+
+    '''
+    for x, p in enumerate(pred[:10]):
+        s = "{} {}".format(p, (np.exp(p_pred[x]) / np.sum(np.exp(p_pred[x]))))
+        print(s)
+    '''
+
     score = metrics.accuracy_score(y_val, pred)
     print("accuracy: {}".format(score))
+    return clf
+
+def evaluate(clf, t_dat):
+    pred = clf.decision_function(t_dat)
+    probs = []
+    for d in pred:
+        probs.append(np.exp(d) / np.sum(np.exp(d)))
+
+    return probs
+
+def write(probs, final_test_ids):
+    with open('submission.csv', 'w+') as f:
+        f.write('id,EAP,HPL,MWS\n')
+        for x, p in enumerate(probs):
+            s = "{},{},{},{}\n".format(final_test_ids[x], p[0], p[1], p[2])
+            f.write(s)
+
 
 def main():
     # load the data from files; final_test used later
@@ -74,7 +99,16 @@ def main():
     # reduce features maybe we'll see
     reduce_features(X_train, y_train)
 
-    ridge(X_train, y_train, X_val, y_val )
+    # train a classifier
+    clf = ridge(X_train, y_train, X_val, y_val)
+
+    # classify the test data for submission
+    final_test_ids, final_test_data = [x[0] for x in final_test[1:]], [x[1] for x in final_test[1:]]
+
+    final_test_data = extract_test_feat(vectorizer, final_test_data)
+
+    probs = evaluate(clf, final_test_data)
+    write(probs, final_test_ids)
 
 
 if __name__ == '__main__':
