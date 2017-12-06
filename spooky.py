@@ -14,7 +14,7 @@ def load_data():
     with open('train.txt', encoding='utf-8') as f:
         trn = f.readlines()
 
-    with open('test.txt', , encoding='utf-8') as f:
+    with open('test.txt', encoding='utf-8') as f:
         tst = f.readlines()
 
     train = [x.strip().split('\t') for x in trn]
