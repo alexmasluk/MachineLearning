@@ -11,10 +11,10 @@ import numpy as np
 classes = ['EAP', 'HPL', 'MWS']
 
 def load_data():
-    with open('train.txt') as f:
+    with open('train.txt', encoding='utf-8') as f:
         trn = f.readlines()
 
-    with open('test.txt') as f:
+    with open('test.txt', encoding='utf-8') as f:
         tst = f.readlines()
 
     train = [x.strip().split('\t') for x in trn]
